@@ -9,7 +9,7 @@ export const initPayment = (form, orderDetails, orderSummary, cartProducts, toke
     const { firstname, lastName, mobile, email } = form;
 
     const options = {
-        key: 'rzp_test_xntxgn3ZFlbBcL',
+        key: import.meta.env.VITE_API_RAZORPAY_KEY_ID,
         order_id: orderDetails.id,
         amount: orderDetails.amount,
         currency: orderDetails.currency,

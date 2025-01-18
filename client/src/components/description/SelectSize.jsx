@@ -1,9 +1,10 @@
-import { Box, HStack, useColorMode, useRadio, useRadioGroup } from "@chakra-ui/react";
+import { Box, HStack, useColorMode, useRadio, useRadioGroup, useCheckbox } from "@chakra-ui/react";
 
 
 const RadioCard = (props) => {
 
-    const { getInputProps, getCheckboxProps } = useRadio(props);
+    const { getInputProps } = useRadio(props);
+    const {getCheckboxProps} = useCheckbox(props);
     const input = getInputProps();
     const checkbox = getCheckboxProps();
     const { colorMode } = useColorMode();
