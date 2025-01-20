@@ -23,6 +23,9 @@ app.post("/login", login);
 //Razorpay payment
 app.use("/api/payment", paymentController);
 
+app.get("/", (req, res) => {
+    res.send("Server is running");
+});
 app.use("/men", menController);
 app.use("/women", womenController);
 app.use("/kids", kidsController);
