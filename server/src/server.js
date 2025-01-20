@@ -8,3 +8,5 @@ app.listen(port, async () => {
     await connect();
     console.log(`Listening to port ${port}`);
 });
+
+module.exports = app;
