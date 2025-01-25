@@ -23,7 +23,6 @@ const postFavourite = (model) => async (req, res) => {
 
 const getAll = (model) => async (req, res) => {
     try {
-        console.log('in get all function =================');
         
         const item = await model.find().lean().exec();
 
